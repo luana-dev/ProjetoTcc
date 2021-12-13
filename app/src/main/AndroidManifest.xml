@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.trytouse">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TrytoUse">
+        <activity android:name=".activity.FimNove"></activity>
+        <activity android:name=".activity.FimUber" />
+        <activity
+            android:name=".activity.Passageiro99Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PubFotoActivity"
+            android:parentActivityName=".TelaInicialInsta"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PerfilAmigoActivity"
+            android:parentActivityName=".TelaInicialInsta"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EditPerfilActivity"
+            android:parentActivityName=".TelaInicialInsta"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CadastroInsta"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FimInsta"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FimWhats"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LoginUber"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TelaInicialInsta"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ChatActivity"
+            android:label="@string/title_activity_chat"
+            android:parentActivityName=".activity.WhatsActivity4"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.TrytoUse.NoActionBar" />
+        <activity
+            android:name=".activity.LoginAppsTutorial"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CadastroAppsTutorial"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PassageiroActivity"
+            android:label="@string/title_activity_passageiro"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.TrytoUse.NoActionBar" />
+        <activity
+            android:name=".activity.ConfiguracoesActivityWhats"
+            android:parentActivityName=".activity.WhatsActivity4"
+            android:screenOrientation="portrait" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".activity.MapsActivityUber"
+            android:label="@string/title_activity_maps_uber"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Insta_Activity3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MainActivitynovenove"
+            android:label="@string/title_activity_main_activitynovenove"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.TrytoUse.NoActionBar" />
+        <activity
+            android:name=".InstaActivity2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.NovenoveActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TelaInicialUber"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TelaPermiUber"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WhatsActivity4"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WhatsActivity3"
+            android:parentActivityName=".activity.WhatsActivity2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WhatsActivity2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SegundaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

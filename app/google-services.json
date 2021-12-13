@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "919530177048",
+    "project_id": "appstutorial-bfad2",
+    "storage_bucket": "appstutorial-bfad2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:919530177048:android:79616f84efdbcb64e8396d",
+        "android_client_info": {
+          "package_name": "com.example.trytouse"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "919530177048-epqcselcsvefg3h834mq8p718culu38l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.trytouse",
+            "certificate_hash": "2b2304a88a318270b2b08ee0b94a3c79b090a224"
+          }
+        },
+        {
+          "client_id": "919530177048-imdomkv1o0dr19as6mh1ugpnltcn3ckg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwxBtWSvvRY1KFTHiZ6EilR9kRlRYRZV4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "919530177048-imdomkv1o0dr19as6mh1ugpnltcn3ckg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

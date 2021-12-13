@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Passageiro99Activity">
+
+    <include layout="@layout/content_main_activitynovenove"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/bg_mensagem_chat"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <EditText
+                android:id="@+id/editLocalnove"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/ic_baseline_search_24"
+                android:drawablePadding="6dp"
+                android:ems="10"
+                android:enabled="true"
+                android:hint="Para onde vamos?"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:textColorHint="@color/cinza"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/bg_mensagem_chat"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editMeuLocal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="Localização"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/viewPagerpasnove"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_gravity="bottom|center|clip_vertical"
+        android:layout_weight="1"
+        android:background="@drawable/bg_balao"
+        android:backgroundTint="@color/white"></FrameLayout>
+
+    <Button
+        android:id="@+id/btn_chamarnove"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:background="#FFEB3B"
+        android:backgroundTint="@color/black"
+        android:text="Chamar motorista"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:backgroundTint="#FFEB3B" />
+
+    <include layout="@layout/toolbar99"></include>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical">
+
+        <include
+            android:id="@+id/include6"
+            layout="@layout/botao_voltar_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
